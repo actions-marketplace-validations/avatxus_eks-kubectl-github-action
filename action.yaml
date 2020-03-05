@@ -1,5 +1,5 @@
 # action.yml
-name: 'Kubectl for EKS'
+name: 'EKS kubectl docker image'
 description: 'Run kubectl in an EKS'
 runs:
   using: 'docker'
