@@ -1,6 +1,9 @@
 # action.yml
 name: 'EKS kubectl docker image'
 description: 'Run kubectl in an EKS'
+branding:
+  icon: 'check'
+  color: 'blue'
 runs:
   using: 'docker'
   image: 'Dockerfile'
