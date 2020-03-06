@@ -11,9 +11,6 @@ RUN apt update \
     && chmod +x /usr/local/bin/kubectl \
     && apt-get remove -y curl openssl
 
-RUN pip3 uninstall botocore boto3 && pip3 install boto3 
-RUN pip3 install --upgrade --user awscli
-
 ADD entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 

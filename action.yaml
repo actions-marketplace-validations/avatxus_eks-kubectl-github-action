@@ -1,9 +1,15 @@
 # action.yml
 name: 'EKS kubectl docker image'
 description: 'Run kubectl in an EKS'
+inputs:
+  command:
+    description: 'Command to be executed'
+    required: true
 branding:
   icon: 'check'
   color: 'blue'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}
